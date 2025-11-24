@@ -1,45 +1,51 @@
+// app/fa/page.tsx
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
-import Contact from "@/components/Contact";
-
+import ProjectList from "@/components/ProjectList";
+import SocialLinks from "@/components/SocialLinks";
 
 export default function PageFA() {
-return (
-<main className="flex flex-col gap-12 w-full" dir="rtl">
-<Navbar lang="fa" />
-<Hero
-direction="rtl"
-title="سلام، من محمد مروتی هستم"
-role="توسعه‌دهنده فرانت‌اند و سازنده بازی"
-subtitle="من وب‌اپلیکیشن‌های مدرن و پروژه‌های تعاملی خلاقانه می‌سازم و با Next.js و موتورهای بازی کار می‌کنم."
-cta="دیدن پروژه‌ها"
-/>
+  return (
+    <div className="space-y-10" dir="rtl">
+      <Navbar lang="fa" />
 
+      <section className="mt-6 text-right">
+        <h1 className="text-3xl sm:text-4xl font-bold mb-2">
+          سلام، من محمد مروتی هستم
+        </h1>
+        <h2 className="text-sm sm:text-base text-blue-700 font-medium mb-4">
+          توسعه‌دهنده فرانت‌اند و سازنده بازی
+        </h2>
+        <p className="text-sm sm:text-base text-slate-700 max-w-2xl ml-auto">
+          من وب‌اپلیکیشن‌های مدرن و تجربه‌های تعاملی می‌سازم. با Next.js،
+          TypeScript و طراحی رابط کاربری کار می‌کنم تا محصولات تمیز، واکنش‌گرا و
+          لذت‌بخش بسازم.
+        </p>
+      </section>
 
-<Projects
-direction="rtl"
-sectionTitle="پروژه‌های من"
-projects={[
-{
-title: "Red Light – Green Light (بازی Squid Game)",
-description: "بازسازی مرحله معروف Squid Game و منتشر شده در itch.io.",
-url: "https://muhammadmorowati.itch.io/red-light-green-light",
-urlLabel: "اجرای بازی",
-tags: ["بازی", "3D", "Engine"],
-},
-{
-title: "ارزدیجیتال (ArzDigital)",
-description: "وب‌سایتی مدرن و واکنش‌گرا در حوزه کریپتو توسعه‌یافته با Next.js.",
-url: "https://arzdigital.vercel.app/",
-urlLabel: "مشاهده سایت",
-tags: ["Next.js", "Crypto"],
-},
-]}
-/>
+      <ProjectList
+        title="پروژه‌های من"
+        direction="rtl"
+        projects={[
+          {
+            title: "Red Light – Green Light (بازی Squid Game)",
+            description:
+              "بازسازی مرحله معروف Squid Game و منتشر شده در itch.io.",
+            url: "https://muhammadmorowati.itch.io/red-light-green-light",
+            urlLabel: "اجرای بازی",
+            tags: ["بازی", "3D", "تعاملی"],
+          },
+          {
+            title: "ارزدیجیتال (ArzDigital)",
+            description:
+              "یک وب‌سایت مدرن و واکنش‌گرا در حوزه کریپتو، توسعه‌یافته با Next.js.",
+            url: "https://arzdigital.vercel.app/",
+            urlLabel: "مشاهده سایت",
+            tags: ["Next.js", "کریپتو", "Responsive"],
+          },
+        ]}
+      />
 
-
-<Contact direction="rtl" lang="fa" />
-</main>
-);
+      <SocialLinks direction="rtl" lang="fa" />
+    </div>
+  );
 }

@@ -1,43 +1,51 @@
+// app/page.tsx
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
-import Contact from "@/components/Contact";
-
+import ProjectList from "@/components/ProjectList";
+import SocialLinks from "@/components/SocialLinks";
 
 export default function PageEN() {
-return (
-<main className="flex flex-col gap-12 w-full">
-<Navbar lang="en" />
-<Hero
-direction="ltr"
-title="Hi, I'm Muhammad Morowati"
-role="Frontend Developer & Game Creator"
-subtitle="I build modern web apps and creative interactive experiences using Next.js, TypeScript and game engines."
-cta="View my work"
-/>
-<Projects
-direction="ltr"
-sectionTitle="My Projects"
-projects={[
-{
-title: "Red Light – Green Light (Squid Game)",
-description: "A recreation of the iconic Squid Game challenge, published on itch.io.",
-url: "https://muhammadmorowati.itch.io/red-light-green-light",
-urlLabel: "Play game",
-tags: ["Game", "3D", "Engine"],
-},
-{
-title: "ArzDigital",
-description: "A responsive modern crypto platform built in Next.js.",
-url: "https://arzdigital.vercel.app/",
-urlLabel: "Open website",
-tags: ["Next.js", "Crypto", "API"],
-},
-]}
-/>
+  return (
+    <div className="space-y-10">
+      <Navbar lang="en" />
 
+      <section className="mt-6 text-left">
+        <h1 className="text-3xl sm:text-4xl font-bold mb-2">
+          Hi, I'm Muhammad Morowati
+        </h1>
+        <h2 className="text-sm sm:text-base text-blue-700 font-medium mb-4">
+          Frontend Developer & Game Creator
+        </h2>
+        <p className="text-sm sm:text-base text-slate-700 max-w-2xl">
+          I build modern web applications and interactive game experiences. I
+          enjoy working with Next.js, TypeScript and UI/UX to create clean,
+          responsive and enjoyable products.
+        </p>
+      </section>
 
-<Contact direction="ltr" lang="en" />
-</main>
-);
+      <ProjectList
+        title="My Projects"
+        direction="ltr"
+        projects={[
+          {
+            title: "Red Light – Green Light (Squid Game)",
+            description:
+              "Recreation of the iconic Squid Game challenge. Published on itch.io.",
+            url: "https://muhammadmorowati.itch.io/red-light-green-light",
+            urlLabel: "Play the game",
+            tags: ["Game", "3D", "Interactive"],
+          },
+          {
+            title: "ArzDigital",
+            description:
+              "Modern, responsive crypto web app built with Next.js and APIs.",
+            url: "https://arzdigital.vercel.app/",
+            urlLabel: "Open website",
+            tags: ["Next.js", "Crypto", "Responsive"],
+          },
+        ]}
+      />
+
+      <SocialLinks direction="ltr" lang="en" />
+    </div>
+  );
 }

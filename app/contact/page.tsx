@@ -1,26 +1,22 @@
+// app/contact/page.tsx
 import Navbar from "@/components/Navbar";
-
+import SocialLinks from "@/components/SocialLinks";
 
 export default function ContactPageEN() {
-return (
-<main className="flex flex-col gap-8 w-full">
-<Navbar lang="en" />
+  return (
+    <div className="space-y-8">
+      <Navbar lang="en" />
 
+      <section className="mt-6 text-left space-y-4 max-w-xl">
+        <h1 className="text-3xl font-bold">Contact</h1>
+        <p className="text-sm sm:text-base text-slate-700">
+          The best way to reach me is email or Telegram. I’m open to frontend
+          roles, collaboration on web or game projects, and interesting
+          opportunities.
+        </p>
+      </section>
 
-<section>
-<h1 className="text-3xl font-bold mb-4">Contact Me</h1>
-<p className="text-sm text-slate-700 mb-6 max-w-xl">
-Feel free to contact me using any of the links below.
-</p>
-
-
-<ul className="space-y-3 text-sm">
-<li>Email: <a className="text-blue-600 underline" href="mailto:muhammadmorowati@gmail.com">muhammadmorowati@gmail.com</a></li>
-<li>LinkedIn: <a className="text-blue-600 underline" href="https://www.linkedin.com/in/muhammad-morowati-246617324">LinkedIn Profile</a></li>
-<li>Telegram: <a className="text-blue-600 underline" href="https://t.me/mhmorowati">@mhmorowati</a></li>
-<li>GitHub: <a className="text-blue-600 underline" href="https://github.com/muhammadmorowati">github.com/muhammadmorowati</a></li>
-</ul>
-</section>
-</main>
-);
+      <SocialLinks direction="ltr" lang="en" />
+    </div>
+  );
 }
