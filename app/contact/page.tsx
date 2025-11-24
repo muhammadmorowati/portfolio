@@ -11,7 +11,7 @@ export default function ContactPageEN() {
         <h1 className="text-3xl font-bold">Contact</h1>
         <p className="text-sm sm:text-base text-slate-700">
           The best way to reach me is email or Telegram. I’m open to frontend
-          roles, collaboration on web or game projects, and interesting
+          roles, collaboration on web, and interesting
           opportunities.
         </p>
       </section>

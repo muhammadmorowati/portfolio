@@ -15,6 +15,17 @@ export default function SocialLinks({ direction, lang }: SocialLinksProps) {
       </h2>
       <ul className="space-y-2 text-xs sm:text-sm text-slate-700">
         <li>
+           <span className="font-medium">
+            {lang === "fa" ? "شماره تماس" : "Contact number"}: 
+            <span
+              className="text-blue-600 hover:text-blue-800 underline"
+            >
+                         {lang === "fa" ? " 09187139586 " : " +98-918-713-9586 "}
+
+            </span>
+          </span>
+        </li>
+        <li>
           <span className="font-medium">
             {lang === "fa" ? "ایمیل" : "Email"}:
           </span>{" "}
@@ -33,7 +44,7 @@ export default function SocialLinks({ direction, lang }: SocialLinksProps) {
             target="_blank"
             rel="noreferrer"
           >
-            /in/muhammad-morowati-246617324
+            Linkedin muhammad morowati
           </a>
         </li>
         <li>
@@ -55,7 +66,7 @@ export default function SocialLinks({ direction, lang }: SocialLinksProps) {
             target="_blank"
             rel="noreferrer"
           >
-            github.com/muhammadmorowati
+           muhammadmorowati
           </a>
         </li>
       </ul>

@@ -10,7 +10,7 @@ export default function AboutEN() {
       <section className="mt-6 text-left space-y-4">
         <h1 className="text-3xl font-bold">About me</h1>
         <p className="text-sm sm:text-base text-slate-700 max-w-2xl">
-          I'm Muhammad Morowati, a frontend developer and game creator. I enjoy
+          I'm Muhammad Morowati, a frontend developer. I enjoy
           turning ideas into interactive products and clean interfaces. My main
           tools are React, Next.js and TypeScript.
         </p>

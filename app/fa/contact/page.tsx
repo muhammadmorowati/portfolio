@@ -11,7 +11,7 @@ export default function ContactPageFA() {
         <h1 className="text-3xl font-bold">ارتباط با من</h1>
         <p className="text-sm sm:text-base text-slate-700">
           بهترین راه برای ارتباط با من ایمیل یا تلگرام است. برای همکاری روی
-          پروژه‌های فرانت‌اند، وب و بازی یا فرصت‌های جذاب می‌تونید پیام بدید.
+          پروژه‌های فرانت‌اند، وب یا فرصت‌های جذاب می‌تونید پیام بدید.
         </p>
       </section>
 

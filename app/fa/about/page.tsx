@@ -10,7 +10,7 @@ export default function AboutFA() {
       <section className="mt-6 text-right space-y-4">
         <h1 className="text-3xl font-bold">درباره من</h1>
         <p className="text-sm sm:text-base text-slate-700 max-w-2xl ml-auto">
-          من محمد مروتی هستم؛ توسعه‌دهنده فرانت‌اند و سازنده بازی. از اینکه
+          من محمد مروتی هستم؛ توسعه‌دهنده فرانت‌اند. از اینکه
           ایده‌ها را به تجربه‌های تعاملی و رابط‌های کاربری تمیز تبدیل کنم لذت
           می‌برم. ابزار اصلی من React، Next.js و TypeScript است.
         </p>

@@ -13,7 +13,7 @@ export default function PageFA() {
           سلام، من محمد مروتی هستم
         </h1>
         <h2 className="text-sm sm:text-base text-blue-700 font-medium mb-4">
-          توسعه‌دهنده فرانت‌اند و سازنده بازی
+          توسعه‌دهنده فرانت‌اند
         </h2>
         <p className="text-sm sm:text-base text-slate-700 max-w-2xl ml-auto">
           من وب‌اپلیکیشن‌های مدرن و تجربه‌های تعاملی می‌سازم. با Next.js،
@@ -32,7 +32,7 @@ export default function PageFA() {
               "بازسازی مرحله معروف Squid Game و منتشر شده در itch.io.",
             url: "https://muhammadmorowati.itch.io/red-light-green-light",
             urlLabel: "اجرای بازی",
-            tags: ["بازی", "3D", "تعاملی"],
+            tags: ["بازی", "تعاملی"],
           },
           {
             title: "ارزدیجیتال (ArzDigital)",

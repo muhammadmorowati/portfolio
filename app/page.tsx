@@ -13,10 +13,10 @@ export default function PageEN() {
           Hi, I'm Muhammad Morowati
         </h1>
         <h2 className="text-sm sm:text-base text-blue-700 font-medium mb-4">
-          Frontend Developer & Game Creator
+          Frontend Developer
         </h2>
         <p className="text-sm sm:text-base text-slate-700 max-w-2xl">
-          I build modern web applications and interactive game experiences. I
+          I build modern web applications. I
           enjoy working with Next.js, TypeScript and UI/UX to create clean,
           responsive and enjoyable products.
         </p>
@@ -32,7 +32,7 @@ export default function PageEN() {
               "Recreation of the iconic Squid Game challenge. Published on itch.io.",
             url: "https://muhammadmorowati.itch.io/red-light-green-light",
             urlLabel: "Play the game",
-            tags: ["Game", "3D", "Interactive"],
+            tags: ["Game", "Interactive"],
           },
           {
             title: "ArzDigital",
