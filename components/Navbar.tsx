@@ -49,7 +49,16 @@ export default function Navbar({ lang }: NavbarProps) {
         >
           {isFA ? "تماس" : "Contact"}
         </Link>
-
+ 
+        <Link
+          href={isFA ? "/fa/articles" : "/articles"}
+          className={`${linkBase} ${
+            isActive(isFA ? "/fa/articles" : "/articles") ? linkActive : ""
+          }`}
+        >
+          {isFA ? "مقالات" : "Articles"}
+        </Link>
+        
         <Link
           href={isFA ? "/" : "/fa"}
           className="text-xs border border-slate-300 px-2 py-1 rounded-full hover:border-blue-400 hover:text-blue-700 transition-colors"

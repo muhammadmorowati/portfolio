@@ -1,4 +1,5 @@
 // app/page.tsx
+import ArticleCard from "@/components/ArticleCard";
 import Navbar from "@/components/Navbar";
 import ProjectList from "@/components/ProjectList";
 import SocialLinks from "@/components/SocialLinks";
@@ -45,6 +46,33 @@ export default function PageEN() {
         ]}
       />
 
+      
+      <section className="space-y-4">
+        <h2 className="text-xl font-bold">Articles</h2>
+
+        <div className="grid gap-4 sm:grid-cols-2">
+          <ArticleCard
+            title="Article Title 1"
+            summary="Short summary of the article..."
+            slug="article-1"
+            direction="ltr"
+          />
+          <ArticleCard
+            title="Article Title 2"
+            summary="Short summary here..."
+            slug="article-2"
+            direction="ltr"
+          />
+        </div>
+
+        <a
+          href="/articles"
+          className="text-sm text-blue-600 underline hover:text-blue-800"
+        >
+          View all articles →
+        </a>
+      </section>
+      
       <SocialLinks direction="ltr" lang="en" />
     </div>
   );

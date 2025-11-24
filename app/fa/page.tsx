@@ -1,4 +1,5 @@
 // app/fa/page.tsx
+import ArticleCard from "@/components/ArticleCard";
 import Navbar from "@/components/Navbar";
 import ProjectList from "@/components/ProjectList";
 import SocialLinks from "@/components/SocialLinks";
@@ -45,6 +46,33 @@ export default function PageFA() {
         ]}
       />
 
+       <section className="space-y-4">
+        <h2 className="text-xl font-bold">مقالات</h2>
+
+        <div className="grid gap-4 sm:grid-cols-2">
+          <ArticleCard
+            title="عنوان مقاله ۱"
+            summary="خلاصه‌ای کوتاه از مقاله..."
+            slug="article-1"
+            direction="rtl"
+          />
+
+          <ArticleCard
+            title="عنوان مقاله ۲"
+            summary="متنی کوتاه درباره این مقاله..."
+            slug="article-2"
+            direction="rtl"
+          />
+        </div>
+
+        <a
+          href="/fa/articles"
+          className="text-sm text-blue-600 underline"
+        >
+          مشاهده همه مقالات
+        </a>
+      </section>
+      
       <SocialLinks direction="rtl" lang="fa" />
     </div>
   );
